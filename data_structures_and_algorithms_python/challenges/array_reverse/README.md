@@ -9,4 +9,4 @@ Approach: I used a **for in** loop that iterates through the array elements. The
 Complexity: ***O(n)***, where n is the number of elements in the array.
 
 ## Solution
-![Whiteboard](../../../assets/array_reverse.png)
+![Whiteboard](../../../assets/reverse_array.png)
