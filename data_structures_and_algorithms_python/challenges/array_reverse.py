@@ -1,4 +1,4 @@
-def reverse_array(arr):
+def reverseArray(arr):
     new_arr = []
     for element in arr:
         new_arr.insert(0, element)
