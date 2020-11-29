@@ -7,5 +7,5 @@ def reverseArray(arr):
 
 if __name__ == "__main__":
     arr = [2, 4, 6, 8, 10]
-    print(reverse_array(arr))
+    print(reverseArray(arr))
 
