@@ -16,6 +16,10 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
         1. `insert`: takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
         2. `includes`: takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
         3. `__str__`: returns a string representing all the values in the Linked List, formatted as: `"{ a } -> { b } -> { c } -> NULL"`
+        3. `append`: dds a new node with the given value to the end of the list.
+        4. `insertBefore`: adds a new node with the given newValue immediately before the first value node.
+        5. `insertAfter`: adds a new node with the given newValue immediately after the first value node.
+        6. `deleteValue`:  delete a node with the given value from the linked list.
 
 **User acceptance tests** are included with the following test cases:
 
@@ -35,4 +39,15 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
         * list.includes(11) -> False
     7. Can properly return a collection of all the values that exist in the linked list.
         * print(list) -> "{ 9 } -> { 7 } -> { 5 } -> { 3 } -> NULL"
+
+    8. Can successfully add a node to the end of the linked list.
+    9. Can successfully add multiple nodes to the end of a linked list.
+    10. Can successfully insert a node before a node located i the middle of a linked list.
+    11. Can successfully insert a node before the first node of a linked list.
+    12. Can successfully insert after a node in the middle of the linked list.
+    13. Can successfully insert a node after the last node of the linked list.
+    14. Can successfully delete a value in the middle of the linked list.
+    15. Can successfully delete a the first value of the linked list.
+    16. Can successfully delete a the last value of the linked list.
+"""
 
