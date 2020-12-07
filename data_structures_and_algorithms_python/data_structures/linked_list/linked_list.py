@@ -80,33 +80,48 @@ class LinkedList:
                 current = current.next
             current.next = current.next.next
 
-        
-        
-    
+    def getLength(self): 
+        current = self.head 
+        count = 0 
+        while (current): 
+            count += 1
+            current = current.next
+        return count 
 
-
-
+    def get_kth_value(self, k):
+        list_length = self.getLength()
+        if type(k) != int or k < 0:
+            raise TypeError("The parameter must be a positive integer")
+        elif list_length == 0:
+            raise Exception("Linked List is empty.")
+        elif k > list_length-1:
+            raise IndexError("Index out of range")
+        else:
+            value_index = (list_length-1) - k
+            counter = 0
+            current = self.head
+            while(current):
+                if counter == value_index:
+                    return(current.value)
+                counter += 1
+                current = current.next
 
 ####################################################
 if __name__ == "__main__":
     myList = LinkedList()
+
     myList.append(0)
     myList.insert(5)
     myList.insert(3)
     myList.insert(1)
-    myList.append(20)
-    myList.append(22)
-    myList.append(24)
-    myList.insertBefore(1, 85)
-    myList.insertAfter(24, 100)
-    myList.insertAfter(85, 100)
-    myList.insertAfter(0, 100)
-    myList.insertAfter(1, 100)
     myList.append(33)
-    print(myList)
     myList.insertAfter(33, 66)
 
     print(myList)
+
+
+    print(myList.get_kth_value(-1))
+
 
   
 

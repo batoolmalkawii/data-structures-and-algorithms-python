@@ -20,6 +20,7 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
         4. `insertBefore`: adds a new node with the given newValue immediately before the first value node.
         5. `insertAfter`: adds a new node with the given newValue immediately after the first value node.
         6. `deleteValue`:  delete a node with the given value from the linked list.
+        7. `get_kth_value`: takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
 
 **User acceptance tests** are included with the following test cases:
 
@@ -49,5 +50,11 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
     14. Can successfully delete a value in the middle of the linked list.
     15. Can successfully delete a the first value of the linked list.
     16. Can successfully delete a the last value of the linked list.
+    * test get_kth_value when:
+    1. Where k is greater than the length of the linked list
+    2. Where k and the length of the list are the same
+    3. Where k is not a positive integer
+    4. Where the linked list is of a size 1
+    5. “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
 """
 
