@@ -159,6 +159,53 @@ def delete_last():
     list.deleteValue(1)
     assert list.head.next.next.value == None
 
+##########################################################################################
+"""
+Test cases - part 3, test get_kth_value when:
+1. Where k is greater than the length of the linked list
+2. Where k and the length of the list are the same
+3. Where k is not a positive integer
+4. Where the linked list is of a size 1
+5. “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+"""
+
+def test_kth_greater():
+    list = LinkedList()
+    list.append(1)
+    list.append(2)
+    list.append(3)
+    with pytest.raises(Exception):
+        assert list.get_kth_value(5)
+
+def test_kth_same_length():
+    list = LinkedList()
+    list.append(1)
+    list.append(2)
+    list.append(3)
+    with pytest.raises(Exception):
+        assert list.get_kth_value(3)
+ 
+def test_kth_negative():
+    list = LinkedList()
+    list.append(1)
+    list.append(2)
+    list.append(3)
+    with pytest.raises(Exception):
+        assert list.get_kth_value(-1)
+
+def test_kth_size_one():
+    list = LinkedList()
+    list.append(1)
+    assert list.get_kth_value(0) == 1
+
+def test_kth_middle():
+    list = LinkedList()
+    list.append(1)
+    list.append(2)
+    list.append(3)
+    assert list.get_kth_value(1) == 2
+
+
 
 
 
