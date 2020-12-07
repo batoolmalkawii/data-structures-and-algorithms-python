@@ -1,4 +1,4 @@
-# Reverse an Array
+# Shift an Array
 Challenge12that requires inserting into the middle index of an array.
 
 ## Challenge
