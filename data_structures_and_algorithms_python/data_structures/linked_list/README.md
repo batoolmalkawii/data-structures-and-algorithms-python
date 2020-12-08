@@ -21,6 +21,7 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
         5. `insertAfter`: adds a new node with the given newValue immediately after the first value node.
         6. `deleteValue`:  delete a node with the given value from the linked list.
         7. `get_kth_value`: takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+        8. `zipLists`: takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists.
 
 **User acceptance tests** are included with the following test cases:
 
@@ -50,11 +51,18 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
     14. Can successfully delete a value in the middle of the linked list.
     15. Can successfully delete a the first value of the linked list.
     16. Can successfully delete a the last value of the linked list.
-    * test get_kth_value when:
+    * test `get_kth_value` when:
     1. Where k is greater than the length of the linked list
     2. Where k and the length of the list are the same
     3. Where k is not a positive integer
     4. Where the linked list is of a size 1
     5. “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+    * test `zipLists` when:
+    1. Where both lists are empty.
+    2. Where 1st list is empty.
+    3. Where 2nd list is empty.
+    4. Where both lists have the same length.
+    5. Where 1st fist is longer than the 2nd list.
+    6. Where 2nd list is longer than the 1st list.
 """
 
