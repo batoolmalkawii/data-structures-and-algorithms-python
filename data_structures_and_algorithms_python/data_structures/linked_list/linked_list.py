@@ -106,21 +106,40 @@ class LinkedList:
                 counter += 1
                 current = current.next
 
+    def zipLists(self, other):
+        if(other.head != None):
+            current_self = self.head
+            current_other = other.head
+            while (current_self):
+                    self.insertAfter(current_self.value, current_other.value)
+                    current_self = current_self.next.next
+                    current_other = current_other.next
+                    if current_other == None:
+                        break
+            while(current_other):
+                self.append(current_other.value)
+                current_other = current_other.next
+
+            
+
+
 ####################################################
 if __name__ == "__main__":
     myList = LinkedList()
-
     myList.append(0)
     myList.insert(5)
     myList.insert(3)
     myList.insert(1)
-    myList.append(33)
-    myList.insertAfter(33, 66)
+    
+
+    print(myList)
+    myList2 = LinkedList()
+
+
+    myList.zipLists(myList2)
 
     print(myList)
 
-
-    print(myList.get_kth_value(-1))
 
 
   

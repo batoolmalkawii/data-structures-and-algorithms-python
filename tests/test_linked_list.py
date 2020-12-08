@@ -204,6 +204,77 @@ def test_kth_middle():
     list.append(2)
     list.append(3)
     assert list.get_kth_value(1) == 2
+##########################################################################################
+"""
+Test cases - part 4, test zipLists when:
+1. Where both lists are empty.
+2. Where 1st list is empty.
+3. Where 2nd list is empty.
+4. Where both lists have the same length.
+5. Where 1st fist is longer than the 2nd list.
+6. Where 2nd list is longer than the 1st list.
+"""
+
+def test_zip_empty():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.zipLists(list2)
+    assert list1.__str__() == "NULL"
+
+def test_zip_1st_empty():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list2.append(1)
+    list2.append(2)
+    list2.append(3)
+    list1.zipLists(list2)
+    assert list1.__str__() == "{ 1 } -> { 2 } -> { 3 } -> NULL"
+
+def test_zip_2nd_empty():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.append(1)
+    list1.append(2)
+    list1.append(3)
+    list1.zipLists(list2)
+    assert list1.__str__() == "{ 1 } -> { 2 } -> { 3 } -> NULL"
+
+def test_zio_same_length():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.append(1)
+    list1.append(2)
+    list1.append(3)
+    list2.append(4)
+    list2.append(5)
+    list2.append(6)
+    list1.zipLists(list2)
+    assert list1.__str__() == "{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> { 6 } -> NULL"
+
+def test_zio_1st_longer():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.append(1)
+    list1.append(2)
+    list1.append(3)
+    list2.append(4)
+    list2.append(5)
+    list1.zipLists(list2)
+    assert list1.__str__() == "{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> NULL"
+
+def test_zio_2nd_longer():
+    list1 = LinkedList()
+    list2 = LinkedList()
+    list1.append(1)
+    list2.append(4)
+    list2.append(5)
+    list1.zipLists(list2)
+    assert list1.__str__() == "{ 1 } -> { 4 } -> { 5 } -> NULL"
+
+
+
+
+
 
 
 
