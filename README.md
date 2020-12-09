@@ -6,3 +6,8 @@
 2. [Array Shift](data_structures_and_algorithms/challenges/array_shift/README.md)
 3. [Array Binary Search](data_structures_and_algorithms/challenges/array_binary_search/README.md)
 
+## List Of Data Structures
+
+1. [Linked Lists](data_structures_and_algorithms/data_structures/linked_list/README.md)
+
+
