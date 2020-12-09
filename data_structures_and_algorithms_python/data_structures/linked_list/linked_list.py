@@ -120,6 +120,16 @@ class LinkedList:
                 self.append(current_other.value)
                 current_other = current_other.next
 
+    def reverseList(self):
+        new_head = None
+        current = self.head
+        while(current != None):
+            next = current.next
+            current.next = new_head
+            new_head = current
+            current = next
+        self.head = new_head
+
             
 
 
@@ -130,15 +140,12 @@ if __name__ == "__main__":
     myList.insert(5)
     myList.insert(3)
     myList.insert(1)
-    
-
     print(myList)
-    myList2 = LinkedList()
-
-
-    myList.zipLists(myList2)
-
+    myList.reverseList()
     print(myList)
+
+
+
 
 
 
