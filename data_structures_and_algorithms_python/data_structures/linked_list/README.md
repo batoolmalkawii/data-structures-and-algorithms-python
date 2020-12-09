@@ -22,6 +22,7 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
         6. `deleteValue`:  delete a node with the given value from the linked list.
         7. `get_kth_value`: takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
         8. `zipLists`: takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists.
+        9. `reverseList`: takes a linked list and returns its reverse.
 
 **User acceptance tests** are included with the following test cases:
 
@@ -41,7 +42,7 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
         * list.includes(11) -> False
     7. Can properly return a collection of all the values that exist in the linked list.
         * print(list) -> "{ 9 } -> { 7 } -> { 5 } -> { 3 } -> NULL"
-
+        
     8. Can successfully add a node to the end of the linked list.
     9. Can successfully add multiple nodes to the end of a linked list.
     10. Can successfully insert a node before a node located i the middle of a linked list.
