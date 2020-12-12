@@ -65,5 +65,4 @@ Ih this project, we created a data structure called **Singly-Linked-List** in Py
     4. Where both lists have the same length.
     5. Where 1st fist is longer than the 2nd list.
     6. Where 2nd list is longer than the 1st list.
-"""
 
