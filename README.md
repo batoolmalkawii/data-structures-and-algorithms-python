@@ -9,5 +9,6 @@
 ## List Of Data Structures
 
 1. [Linked Lists](data_structures_and_algorithms/data_structures/linked_list/README.md)
+2. [Stacks andQueues](data_structures_and_algorithms/data_structures/stacks_and_queues/README.md)
 
 
