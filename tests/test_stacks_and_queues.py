@@ -1,4 +1,5 @@
 from data_structures_and_algorithms_python.data_structures.stacks_and_queues.stacks_and_queues import Stack, Queue
+
 import pytest
 
 """
@@ -113,4 +114,6 @@ def test_stack_empty_exception():
         assert stack.pop()
     with pytest.raises(Exception):
         assert stack.peek()
+
+
 
