@@ -32,6 +32,17 @@ Ih this project, we created a data structure called **Stack** and **Queue** in P
         4. `isEmpty`: that takes no argument, and returns a boolean indicating whether or not the stack is empty.
         5. `__str__`: which prints the stack in this format `  3 | 7 | NULL `.
 
+**PseudoQueue** included the following:
+
+    _Attributes_:
+         1. `inStack`.
+         2. `outStack`.
+
+    _methods_:
+        1. `enqueue(value)`: which inserts value into the PseudoQueue, using a first-in, first-out approach.
+        2. `dequeue()`: which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+
 
 
 **User acceptance tests** are included with the following test cases:
@@ -55,4 +66,12 @@ Ih this project, we created a data structure called **Stack** and **Queue** in P
     5. Can successfully peek the next item on the stack
     6. Can successfully instantiate an empty stack
     7. Calling pop or peek on empty stack raises exception
+
+*PseudoQueue* test cases:
+
+    1. Enqueue into the queue.
+    2. Enqueue multiple values into the queue.
+    3. Dequeue from the queue.
+    4. Dequeue multiple values from the queue.
+    5. Raise an exception when dequeuing from an empty queue.
 
