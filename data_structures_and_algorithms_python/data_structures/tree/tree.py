@@ -64,6 +64,22 @@ class BinaryTree:
 
         return output
 
+
+    def findMaximumValue(self):
+        if not self.root:
+            raise AttributeError("Tree is empty.")
+
+        max = self.root.value
+        tree_elements = self.preOrder()
+
+        for element in tree_elements:
+            if element > max:
+                max = element
+        return (max)
+        
+
+    
+
 """BST"""
 class BinarySearchTree(BinaryTree):
     def add(self, value):
@@ -114,6 +130,7 @@ if __name__ == "__main__":
     print("Pre-Order: ", bt.preOrder())
     print("In-Order: ", bt.inOrder())
     print("Post-Order: ", bt.postOrder())
+    print("Maximum Value: ", bt.findMaximumValue())
 
     """BST"""
     bst = BinarySearchTree()

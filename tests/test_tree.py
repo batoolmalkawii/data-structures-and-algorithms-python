@@ -9,6 +9,9 @@ import pytest
 4. Can successfully return a collection from a preorder traversal.
 5. Can successfully return a collection from an inorder traversal.
 6. Can successfully return a collection from a postorder traversal.
+7. Can successfully return the maximum value in the tree.
+8. Can successfully return an exception when we try to find the maximum value in an empty tree.
+
 """
 
 def test_tree_empty():
@@ -59,6 +62,21 @@ def test_tree_postorder():
     bt.root.left.left = Node(10)
     bt.root.right.right = Node(3)
     assert bt.postOrder() == [10, -1, 7, 3, 5, 6]
+
+def test_tree_max():
+    bt = BinaryTree()
+    bt.root = Node(6)
+    bt.root.right = Node(5)
+    bt.root.left = Node(-1)
+    bt.root.right.left = Node(7)
+    bt.root.left.left = Node(10)
+    bt.root.right.right = Node(3)
+    assert bt.findMaximumValue() == 10
+
+def test_tree_max_empty():
+    bt = BinaryTree()
+    with pytest.raises(Exception):
+        assert bt.findMaximumValue()
 
 
 """
