@@ -11,6 +11,8 @@ import pytest
 6. Can successfully return a collection from a postorder traversal.
 7. Can successfully return the maximum value in the tree.
 8. Can successfully return an exception when we try to find the maximum value in an empty tree.
+9. Can successfully return a collection from a BFS traversal.
+10. Can successfully return an exception when we try to traverse in BFS on empty tree.
 
 """
 
@@ -77,6 +79,22 @@ def test_tree_max_empty():
     bt = BinaryTree()
     with pytest.raises(Exception):
         assert bt.findMaximumValue()
+
+def test_tree_bfs():
+    bt = BinaryTree()
+    bt.root = Node(6)
+    bt.root.right = Node(5)
+    bt.root.left = Node(-1)
+    bt.root.right.left = Node(7)
+    bt.root.left.left = Node(10)
+    bt.root.right.right = Node(3)
+    assert bt.breadthFirst() == [6, -1, 5, 10, 7, 3]
+
+def test_tree_bfs_empty():
+    bt = BinaryTree()
+    with pytest.raises(Exception):
+        assert bt.breadthFirst()
+
 
 
 """
