@@ -76,7 +76,37 @@ class BinaryTree:
             if element > max:
                 max = element
         return (max)
-        
+
+
+    def breadthFirst(self):
+        output = []
+        visited = []
+
+        if self.root:
+            visited.append(self.root)
+            output.append(self.root.value) #add root, level 1
+        else:
+            raise AttributeError("Tree is empty.")
+            
+        current = self.root
+
+        # repeat for each level
+        while current:
+            if current.left:
+                output.append(current.left.value) #add left
+                visited.append(current.left)
+            if current.right:
+                output.append(current.right.value) #add right
+                visited.append(current.right)
+            visited.pop(0)
+            if not visited:
+                break
+            current = visited[0]
+
+        return (output)
+            
+           
+
 
     
 
@@ -131,6 +161,7 @@ if __name__ == "__main__":
     print("In-Order: ", bt.inOrder())
     print("Post-Order: ", bt.postOrder())
     print("Maximum Value: ", bt.findMaximumValue())
+    print ("BFS: ", bt.breadthFirst())
 
     """BST"""
     bst = BinarySearchTree()

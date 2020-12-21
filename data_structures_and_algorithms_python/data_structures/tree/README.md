@@ -16,8 +16,10 @@ Ih this project, we created a data structure called **BinaryTree** and **BinaryS
     _methods_:
         * a method for each of the depth first traversals called `preOrder`, `inOrder`, and `postOrder` which returns an array of the values, ordered appropriately.
         * `findMaximumValue`: returns the max value in the tree.
+        * `breadthFirst`: breadth-first traversal.
 
-![Whiteboard](../../../assets/find_maximum_binary_tree.png)
+![Maximum](../../../assets/find_maximum_binary_tree.png)
+![BFS](../../../assets/bfs.png)
 
 **BinarySearchTree** -inherited from BinaryTree, included the following:
 
@@ -38,6 +40,8 @@ Ih this project, we created a data structure called **BinaryTree** and **BinaryS
     6. Can successfully return a collection from a postorder traversal.
     7. Can successfully return the maximum value in the tree.
     8. Can successfully return an exception when we try to find the maximum value in an empty tree.
+    9. Can successfully return a collection from a BFS traversal.
+    10. Can successfully return an exception when we try to traverse in BFS on empty tree.
 
 *BinarySearchTree* test cases:
 
