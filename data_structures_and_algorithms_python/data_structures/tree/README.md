@@ -15,6 +15,9 @@ Ih this project, we created a data structure called **BinaryTree** and **BinaryS
 
     _methods_:
         * a method for each of the depth first traversals called `preOrder`, `inOrder`, and `postOrder` which returns an array of the values, ordered appropriately.
+        * `findMaximumValue`: returns the max value in the tree.
+
+![Whiteboard](../../../assets/find_maximum_binary_tree.png)
 
 **BinarySearchTree** -inherited from BinaryTree, included the following:
 
