@@ -1,4 +1,3 @@
 [ZoneTransfer]
 ZoneId=3
-ReferrerUrl=https://awwapp.com/
-HostUrl=https://awwapp.com/api/v2/download-image/
+HostUrl=about:internet
