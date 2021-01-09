@@ -17,6 +17,7 @@
 1. [Linked Lists](data_structures_and_algorithms/data_structures/linked_list/README.md)
 2. [Stacks and Queues](data_structures_and_algorithms/data_structures/stacks_and_queues/README.md)
 3. [Binary Trees](data_structures_and_algorithms/data_structures/tree/README.md)
+4. [Hashtable](data_structures_and_algorithms/data_structures/hashtable/README.md)
 
 
 
