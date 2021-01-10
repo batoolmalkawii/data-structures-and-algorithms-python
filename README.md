@@ -9,6 +9,8 @@
 5. [Fizz Buzz Tree](data_structures_and_algorithms/challenges/fizz_buzz_tree/README.md)
 6. [Insertion Sort](data_structures_and_algorithms/challenges/insertion_sort/README.md)
 7. [Merge Sort](data_structures_and_algorithms/challenges/merge_sort/README.md)
+8. [Repeated Word](data_structures_and_algorithms/challenges/repeated_word/README.md)
+
 
 
 
