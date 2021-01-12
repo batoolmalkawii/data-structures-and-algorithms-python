@@ -26,18 +26,22 @@ class BinaryTree:
         if self.root:    
             _walk(self.root)
         else:
-            raise AttributeError("Tree is empty.")
+            return ([])
 
         return output
 
 """------------------------------------------------------------------"""
 def tree_intersection(tree1, tree2):
-    if tree1.root == None or tree2.root == None:
-        raise AttributeError("One of the trees is empty")
-    else:
-        tree1_set = set(tree1.preOrder())
-        tree2_set = set(tree2.preOrder())
-        return (tree1_set.intersection(tree2_set))
+    tree1_set = set(tree1.preOrder())
+    tree2_list = tree2.preOrder()
+    intersection = set()
+
+    for element in tree2_list:
+        if element in tree1_set:
+            intersection.add(element)
+    
+    return (intersection)
+
 """------------------------------------------------------------------"""
 
     

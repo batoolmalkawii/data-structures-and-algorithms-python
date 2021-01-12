@@ -5,7 +5,7 @@ import pytest
 Test Cases:
 1. Verify that the function will return the intersected elements between two lists.
 2. Verify that the function will return an empty set if the two lists have no interstion.
-3. Verify that the function will raise an exception if one of the trees is empty.
+3. Verify that the function will return an empty set if one of the trees is empty.
 4. Verify that the function will return the same tree if we compared the tree with itself.
 """
 
@@ -59,15 +59,14 @@ def test_tree_inter_empty1():
     bt2.root.left.left = Node(60)
     bt2.root.right.right = Node(70)
 
-    with pytest.raises(Exception):
-        assert tree_intersection(bt, bt2)
+    assert tree_intersection(bt, bt2) == set()
 
 def test_tree_inter_empty_both():
     bt = BinaryTree()
     bt2 = BinaryTree()
 
-    with pytest.raises(Exception):
-        assert tree_intersection(bt, bt2)
+    assert tree_intersection(bt, bt2) == set()
+
 
 def test_tree_inter_same():
     bt = BinaryTree()   
