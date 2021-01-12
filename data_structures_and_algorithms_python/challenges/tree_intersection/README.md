@@ -5,7 +5,7 @@ Write a function called tree_intersection that takes two binary tree parameters.
 Without utilizing any of the built-in library methods in Python, return a set of values found in both trees.
 
 ## Approach & Efficiency
-Approach: first, I got a list of each input tree using preOrder traversal. Then, converted the two lists into sets and called the `intersection` method that returned the common elements between the two sets.
+Approach: first, I got a list of each input tree using preOrder traversal. Then, converted one list to a set and iterated through the other list, and checked if the element exists in the set. If it does, add to the output set.
 
 Complexity: `O(n)`, where n is the number of elements in the larger tree.
 
