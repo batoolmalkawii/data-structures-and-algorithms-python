@@ -27,7 +27,8 @@ Ih this project, we created a data structure called **Graph** in Python. We used
         * `AddEdge()`: Adds a new edge between two nodes in the graph, Include the ability to have a “weight”, Takes in the two nodes to be connected by the edge, Both nodes should already be in the Graph
         * `GetNodes()`: Returns all of the nodes in the graph as a collection (set, list, or similar)
         * `GetNeighbors()`: Returns a collection of edges connected to the given node, Takes in a given node, Include the weight of the connection in the returned collection
-        * `Size()`: Returns the total number of nodes in the graph
+        * `Size()`: Returns the total number of nodes in the graph.
+        * `isPathBFS`: Accepts two nodes as input and uses your traversal algorithm to determine if a path exists between the two nodes.
 
 
 **User acceptance tests** are included with the following test cases:
@@ -41,3 +42,5 @@ Ih this project, we created a data structure called **Graph** in Python. We used
     5. Can add multiple edges.
     6. Can get list of nodes in the graph with their weights.
     7. Can get list of neighbor-nodes of a specific nodes.
+    8. Can return True is there is a path between two nodes.
+    9. Can return False is there is no path between two nodes.

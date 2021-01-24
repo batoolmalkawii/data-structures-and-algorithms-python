@@ -228,10 +228,6 @@ class BinarySearchTree(BinaryTree):
 
 
 
-
-
-
-
 if __name__ == "__main__":
 
     """BT"""

@@ -10,6 +10,8 @@ Test Cases:
     5. Can add multiple edges.
     6. Can get list of nodes in the graph with their weights.
     7. Can get list of neighbor-nodes of a specific nodes.
+    8. Can return True is there is a path between two nodes.
+    9. Can return False is there is no path between two nodes.
 """
 
 def test_add_node():
@@ -91,6 +93,21 @@ def test_get_neighbors_no_neighbors():
     neighbors = graph.get_neighbors(banana)
     assert len(neighbors) == 0
     assert neighbors == []
+
+def test_is_path_bfs_true():
+    graph = Graph()
+    n1 = graph.add_node(1)
+    n2 = graph.add_node(2)
+    graph.add_edge(n1, n2)
+    assert (graph.isPathBFS(n1, n2)) == True
+
+def test_is_path_bfs_false():
+    graph = Graph()
+    n1 = graph.add_node(1)
+    n2 = graph.add_node(2)
+    graph.add_edge(n1, n2)
+    assert (graph.isPathBFS(n2, n1)) == False
+
 
 
 
