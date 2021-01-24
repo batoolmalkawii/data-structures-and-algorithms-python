@@ -62,3 +62,33 @@ class Graph:
                     breadth.enqueue(n) 
                     visited.add(n)
         return nodes
+
+    def isPathBFS(self, from_node, to_node):
+        queue = []
+        visited = []
+        queue.append(from_node)
+        visited.append(from_node)
+
+        while(queue != []):
+            dequeued = queue.pop(0)
+
+        for neighbor in self.get_neighbors(dequeued):
+            if neighbor[0] == to_node:
+                return True
+
+            if neighbor not in visited:
+                queue.append(neighbor)
+                visited.append(neighbor)
+
+        return False
+
+
+if __name__ == "__main__":
+    graph = Graph()
+    n1 = graph.add_node(1)
+    n2 = graph.add_node(2)
+    graph.add_edge(n1, n2)
+    print(graph.isPathBFS(n1, n2))
+    print(graph.isPathBFS(n2, n1))
+
+
