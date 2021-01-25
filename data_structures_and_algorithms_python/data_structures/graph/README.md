@@ -28,7 +28,8 @@ Ih this project, we created a data structure called **Graph** in Python. We used
         * `GetNodes()`: Returns all of the nodes in the graph as a collection (set, list, or similar)
         * `GetNeighbors()`: Returns a collection of edges connected to the given node, Takes in a given node, Include the weight of the connection in the returned collection
         * `Size()`: Returns the total number of nodes in the graph.
-        * `isPathBFS`: Accepts two nodes as input and uses your traversal algorithm to determine if a path exists between the two nodes.
+        * `isPathBFS()`: Accepts two nodes as input and uses your traversal algorithm to determine if a path exists between the two nodes.
+        * `get_edge()`: takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
 
 
 **User acceptance tests** are included with the following test cases:
