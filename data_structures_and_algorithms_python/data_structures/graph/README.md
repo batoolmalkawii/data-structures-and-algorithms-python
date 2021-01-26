@@ -30,6 +30,7 @@ Ih this project, we created a data structure called **Graph** in Python. We used
         * `Size()`: Returns the total number of nodes in the graph.
         * `isPathBFS()`: Accepts two nodes as input and uses your traversal algorithm to determine if a path exists between the two nodes.
         * `get_edge()`: takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+        * `depth_first()`: accepts an adjacency list as a graph, and conducts a depth first traversal and returns a collection of nodes in their pre-order depth-first traversal order.
 
 
 **User acceptance tests** are included with the following test cases:
